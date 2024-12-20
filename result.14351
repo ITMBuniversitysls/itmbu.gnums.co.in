@@ -1,0 +1,1198 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta charset="utf-8"><title>
+	ITM(SLS) BARODA UNIVERSITY
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta http-equiv="Content-type" content="text/html; charset=utf-8"><meta name="description"><meta name="author"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" media="all" type="text/css">
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="../Default/assets/global/plugins/font-awesome/css/font-awesome.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/simple-line-icons/simple-line-icons.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/bootstrap/css/bootstrap.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="../Default/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+
+    <link href="../Default/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+
+    <link href="../Default/assets/global/plugins/select2/css/select2.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/select2/css/select2-bootstrap.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+
+    <link href="../Default/assets/global/plugins/datatables/datatables.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/global/plugins/animate/animate.css?V=202103180702" rel="stylesheet">
+    <!-- END PAGE LEVEL PLUGINS -->
+     <link href="../Default/assets/global/plugins/bootstrap-multiselect/css/bootstrap-multiselect.css?V=2022.12.05.12.05" rel="stylesheet" id="style_components" type="text/css">
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="../Default/assets/global/css/components.min.css?V=2022.12.05.12.05" rel="stylesheet" id="style_components" type="text/css">
+    <link href="../Default/assets/global/css/plugins.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <!-- END THEME GLOBAL STYLES -->
+
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="../Default/assets/layouts/layout3/css/layout.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/assets/layouts/layout3/css/themes/default.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css" id="style_color">
+    <link href="../Default/assets/layouts/layout3/css/custom.min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <!-- END THEME LAYOUT STYLES -->
+
+    <!-- BEGIN CUSTOM STYLES -->
+    <link href="../Default/CSS/Minified/gn-globals-min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link href="../Default/CSS/Minified/gn-custom-min.css?V=2022.12.05.12.05" rel="stylesheet" type="text/css">
+    <link id="ctl00_logoicon" rel="shortcut icon" href="https://itmbu.gnums.co.in/U111/University/University/Logo/UniLogoSquare_1.png">
+    <!-- END CUSTOM STYLES -->
+
+
+    <!-- BEGIN BODY -->
+    <style>
+        .page-sidebar .page-sidebar-menu li > a.nav-link, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu li > a.nav-link {
+            display: flex !important;
+        }
+
+        .page-footer {
+            /*position: fixed !important;*/
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 10000 !important;
+            bottom: 0 !important;
+        }
+
+        .page-title {
+            box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.08) !important;
+        }
+    </style>
+    
+
+	
+	<style>
+        .blink_me_Placement, .blink_me_TermRegistrationProcess, .blink_me_HostelRegistrationRenewalProcess, .blink_me_TransportRegistrationProcess {
+            animation: blinker 2s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+
+    <script>
+        //To Prevent Focus Lost on Post Back in Update Panel
+        var postbackElement = null;
+        function RestoreFocus(source, args) {
+            if (postbackElement != null && postbackElement.id != null) {
+                var PostBackControl = document.getElementById(postbackElement.id);
+
+                if (PostBackControl != null && typeof (PostBackControl.type) !== 'undefined') {
+                    var x = PostBackControl.type;
+
+                    if (x == "select-one")
+                        PostBackControl.focus();
+
+                    if (PostBackControl.classList.contains("btnSave"))
+                        GNScrollToTop();
+                }
+            }
+        }
+        function SavePostbackElement(source, args) {
+            postbackElement = args.get_postBackElement();
+        }
+        function AddRequestHandler() {
+
+            // if (typeof Sys !== 'undefined') {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_endRequest(RestoreFocus);
+            prm.add_beginRequest(SavePostbackElement);
+            //  }
+        }
+    </script>
+
+    <!--Google Analytics -->
+    
+    <!-- Google Analytics -->
+</head>
+<body class="page-header-menu-fixed page-container-bg-solid page-footer-fixed" onload="AddRequestHandler()" style="">
+    <form name="aspnetForm" method="post" action="./StudentDashboard.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=lWkFFFVSXEn22fk64HB8N6FawcyLeN9sjszGltt6plzxJMPewdwfLwgEbTY9jfHsbllQYglTH0VGlro6e-elDZFnOec1&amp;t=638240541755514788" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=_DDishfJrdKSTLyNLRGl7AXKzvc38Jt9zYwsNOT3_jHZ_nGMIxzCvTGD0SCckkWqWnuRM_cxDoGw8m0dhZu8Mx-Cwfxkn27k_Uy7uKqSJ9EwUfSDDvXPUWYa2RKO-c8kSPMczQ2&amp;t=254cc609" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=Ums7vYEamuFgfMmwtggHirBxlXu-eJwQZfbzREpLT2bRRgeG90_3GRSsqOZUcRkYkszNFQ5yv7mc_pXd4odyep2o2H9C7ad5JHQycvQBhdVEmI5la4W_ZTt_ryKuZcEgF4VqIZUXaCpbVaPq2SGNCZDJ5rI1&amp;t=254cc609" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D1D3BCC4">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+</div>
+
+        <div class="page-wrapper">
+            <div class="page-wrapper-row">
+                <!-- BEGIN HEADER -->
+                <div class="page-header">
+                    <!-- BEGIN HEADER TOP -->
+                    <div class="page-header-top">
+                        <div class="container-fluid">
+                            <!-- BEGIN LOGO -->
+                            <div class="page-logo margin-bottom-10 margin-top-10">
+                                <a id="ctl00_hlLogo" title="Logo" href="StudentDashboard.aspx"><img id="ctl00_imgLogo" alt="logo" src="../U111/University/University/Logo/UniLogoSquare_1.png" style="border-width:0px;max-height: 75px"></a>
+                            </div>
+
+                            <!-- END LOGO -->
+                            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                            <a href="javascript:;" class="menu-toggler"></a>
+                            <!-- END RESPONSIVE MENU TOGGLER -->
+                            <!-- BEGIN TOP NAVIGATION MENU -->
+                            <div class="top-menu">
+                                <ul class="nav navbar-nav pull-right">
+
+                                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                                    <li class="dropdown dropdown-user dropdown-dark">
+                                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                            <img id="ctl00_imgCurrentUserPhoto" class="img-circle" src="../Images/Faculty_NoImg.jpeg" style="border-width:0px;">
+                                            <span class="username username-hide-mobile">
+                                                <i>Hi,</i>
+                                                <span id="ctl00_lblCurrentUsername" class="username username-hide-mobile bold font-green">PARMAR MURTAZA  TAHERBHAI</span>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-default">
+                                            <li>
+                                                <a id="ctl00_lbtnMyProfile" href="javascript:__doPostBack('ctl00$lbtnMyProfile','')"><i class="icon-user"></i>My Profile</a>
+                                            </li>
+                                            <li>
+                                                <a id="ctl00_hlChangePassword" href="ChangePassword.aspx">
+                                            <i class="icon-key"></i>Change Password 
+                                                </a>
+                                            </li>
+                                            
+                                            <li>
+                                                <a id="ctl00_lbtnLogout" href="javascript:__doPostBack('ctl00$lbtnLogout','')"><i class="icon-lock"></i>Log Out</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- END USER LOGIN DROPDOWN -->
+                                </ul>
+                            </div>
+                            <!-- END TOP NAVIGATION MENU -->
+                        </div>
+                    </div>
+                    <!-- END HEADER TOP -->
+                    <!-- BEGIN HEADER MENU -->
+                    <div class="page-header-menu fixed" style="display: none;">
+                        <div class="container-fluid">
+                            <!-- BEGIN HEADER SEARCH BOX -->
+                            <!-- END HEADER SEARCH BOX -->
+                            <!-- BEGIN MEGA MENU -->
+                            <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+                            <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+                            <div class="hor-menu">
+                                <ul id="ctl00_MenuUL" class="nav navbar-nav"><li class="menu-dropdown classic-menu-dropdown"><a href="https://itmbu.gnums.co.in/StudentPanel/StudentDashboard.aspx"><i class="fa fa-tachometer" aria-hidden="true"></i> &nbsp;Dashboard</a></li><li class="menu-dropdown classic-menu-dropdown"><a href="javascript:;"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Personal<i class="fa fa-angle-down"></i>&nbsp;</a> <ul class="dropdown-menu pull-left"><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/STU_Student/STU_Student_ProfileView.aspx"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp;Profile</a></li></ul></li><li class="menu-dropdown classic-menu-dropdown"><a href="javascript:;"> <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;Timetable / Attendance<i class="fa fa-angle-down"></i>&nbsp;</a> <ul class="dropdown-menu pull-left"><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/TTM_TimeTable/TTM_TimeTable_StudentTimeTable.aspx"> <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;Timetable</a></li><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/TTM_Attendance/TTM_Attendance_StudentAttendance.aspx"> <i class="fa fa-file-text" aria-hidden="true"></i> &nbsp;Attendance</a></li></ul></li><li class="menu-dropdown classic-menu-dropdown"><a href="javascript:;"> <i class="fa fa-clipboard" aria-hidden="true"></i> &nbsp;Exam<i class="fa fa-angle-down"></i>&nbsp;</a> <ul class="dropdown-menu pull-left"><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/Exam/Schedule/EXM_ExamScheduleForStudent.aspx"> <i class="fa fa-calendar-o" aria-hidden="true"></i> &nbsp;Admit Card</a></li><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/Exam/Result/EXM_StudentResultDisplay.aspx"> <i class="fa fa-trophy" aria-hidden="true"></i> &nbsp;Result</a></li><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/Exam/EXM_StudentPosting_Submit_RegularExamForm.aspx"> <i class="fa fa-file-text" aria-hidden="true"></i> &nbsp;Regular Exam Form Submission</a></li><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/Exam/EXM_StudentSubjectPosting_SupplementaryFeesPayment.aspx"> <i class="fa fa-file-text" aria-hidden="true"></i> &nbsp;Remedial Exam Form</a></li></ul></li><li class="menu-dropdown classic-menu-dropdown"><a href="https://itmbu.gnums.co.in/StudentPanel/LMS/LMS_ContentStudentDashboard.aspx"><i class="fa fa-book" aria-hidden="true"></i> &nbsp;LMS</a></li><li class="menu-dropdown classic-menu-dropdown"><a href="javascript:;"> <i class="fa fa-money" aria-hidden="true"></i> &nbsp;Fee<i class="fa fa-angle-down"></i>&nbsp;</a> <ul class="dropdown-menu pull-left"><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/Fee/FEE_FeeDashboard.aspx"> <i class="fa fa-money" aria-hidden="true"></i> &nbsp;Pay Fees</a></li><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/Fee/StudentFeeHistory.aspx"> <i class="fa fa-history" aria-hidden="true"></i> &nbsp;Fee History</a></li></ul></li><li class="menu-dropdown classic-menu-dropdown"><a href="javascript:;"> <i class="fa fa-bank" aria-hidden="true"></i> &nbsp;Hostel<i class="fa fa-angle-down"></i>&nbsp;</a> <ul class="dropdown-menu pull-left"><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/Fee/FEE_HostelFeePayOnline.aspx"> <i class="fa fa-money" aria-hidden="true"></i> &nbsp;Pay Fees</a></li><li class=" "><a class="nav-link" href="https://itmbu.gnums.co.in/StudentPanel/HOS_Hostel/HOS_LeaveList.aspx"> <i class="fa fa-bank" aria-hidden="true"></i> &nbsp;Gate Pass List</a></li></ul></li><li class="menu-dropdown classic-menu-dropdown"><a href="https://itmbu.gnums.co.in/StudentPanel/Feedback/STU_Student_FeedbackList.aspx"><i class="fa fa-dashboard" aria-hidden="true"></i> &nbsp;Feedback</a></li></ul>
+                            </div>
+                            <!-- END MEGA MENU -->
+                        </div>
+                    </div>
+                    <!-- END HEADER MENU -->
+                </div>
+                <!-- END HEADER -->
+            </div>
+        </div>
+        <!-- BEGIN PAGE CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN PAGE HEAD -->
+            <div class="page-head">
+                <div class="container-fluid">
+                    <!-- BEGIN PAGE TITLE -->
+
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="page-title">
+                                <h1>
+                                    
+	<span id="ctl00_cphPageHeader_lblPageHeader_XXXXX">Dashboard</span>
+
+	
+
+                                    <small>
+                                        <span id="ctl00_lblPageHeaderStudentName_XXXXX">PARMAR MURTAZA  TAHERBHAI</span></small>
+                                </h1>
+                            </div>
+                            <div class="pull-right">
+                                <div class="row">
+                                    
+	
+
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- END PAGE TITLE -->
+                    <!-- BEGIN PAGE TOOLBAR -->
+                    <div class="page-toolbar">
+                        <!-- BEGIN THEME PANEL -->
+                        <!-- END THEME PANEL -->
+                    </div>
+                    <!-- END PAGE TOOLBAR -->
+                </div>
+            </div>
+            <!-- END PAGE HEAD -->
+            <!-- BEGIN PAGE CONTENT -->
+            <div class="page-content" style="min-height: 100vh !important;">
+                <div class="container-fluid">
+                    <!-- BEGIN PAGE BREADCRUMB -->
+                    <ul class="page-breadcrumb breadcrumb" style="padding: 0;">
+                        
+                    </ul>
+                    <!-- END PAGE BREADCRUMB -->
+                    <!-- BEGIN PAGE CONTENT INNER -->
+                    
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$cphPageContent$sm', 'aspnetForm', ['tctl00$cphPageContent$upList','','tctl00$cphPageContent$upTestList',''], [], ['ctl00$cphPageContent$rpStudentNotification','','ctl00$cphPageContent$rpCircular','','ctl00$cphPageContent$rpLMSNotification','','ctl00$cphPageContent$rpStudentAnnouncement','','ctl00$cphPageContent$btnAgree',''], 90, 'ctl00');
+//]]>
+</script>
+
+
+	<a href="#" id="hlShowCircularList" data-toggle="modal" data-target="#divShowCircularList"></a>
+	<div id="divShowCircularList" class="modal fade in animated shake" tabindex="-1" data-backdrop="static" data-keyboard="false" data-attention-animation="false" style="max-height: 600px;">
+		<div class="modal-dialog modal-lg">
+			<div class="portlet box green">
+				<div class="modal-content">
+					<div class="modal-body" style="padding-top: 0 !important; padding-bottom: 0 !important;">
+						<div class="modal-header hide">
+							<button type="button" class="btn btn-sm red pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+							<h4 class="modal-title bold">Pending Work</h4>
+						</div>
+						<div class="modal-body" style="padding-top: 0 !important; padding-bottom: 0 !important;">
+
+							
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div id="time" style="color: #c6cfda; display: block" class="bold pull-left"></div>
+						<button id="ctl00_cphPageContent_continueButton" type="button" style="display: none" data-dismiss="modal" class="btn green pull-left">Continue <i class="icon-arrow-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- BEGIN CONTAINER -->
+	
+	<div class="row">
+		<div class="col-md-12">
+			 
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-3">
+			
+
+
+<style>
+    hr {
+        margin: 4px 0px 4px 0px !important;
+    }
+
+    .text-right {
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .text-left {
+        padding: 0px 0px 0px 9px !important;
+    }
+
+    .imgStudentPhoto {
+        border-width: 0px;
+        border-radius: 50% !important;
+        height: 180px !important;
+        width: 180px !important;
+        margin: 0px auto !important;
+    }
+
+    .imgview {
+        padding: 10px !important;
+        border-radius: 5px !important;
+    }
+
+    .dashboard-stat2 {
+        border-radius: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .dashboard-stat2 {
+        padding: 15px 5px 8px;
+    }
+</style>
+
+        <div class="portlet light" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0);">
+            <div class="portlet-title hide">
+                <div class="caption">
+                    <span class="caption-subject font-green-sharp bold uppercase">
+                        <i class="fa fa-user font-green-sharp"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav">
+                            <li>
+                                <img id="ctl00_cphPageContent_ucStudentInfoCompact_imgStudentPhoto" class="img-responsive imgStudentPhoto" src="data:image/png;base64,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" style="border-width:0px;">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="ctl00_cphPageContent_ucStudentInfoCompact_divBottom" class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr class="text-center">
+                                        <td class="text-center sbold" colspan="2">
+                                            <h4>
+                                                <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblStudentLCName" class="bold font-blue-soft text-center gn-label">PARMAR MURTAZA  TAHERBHAI</span>
+
+                                            </h4>
+                                            <small>
+                                                <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblStudentStatusID" title="" class="label label-sm label-success sbold" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="Status Date : 18-10-2023">On Roll</span>
+                                            </small>
+                                        </td>
+                                    </tr>
+
+                                    <tr id="ctl00_cphPageContent_ucStudentInfoCompact_trCourseName" class="text-center">
+	<td class="text-center sbold" colspan="2">
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblCourseName" title="" class="font-dark" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="Program">SOCSET - BCA</span>
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblCurrentSemester" title="" class="font-dark" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="Current Semester"> (Semester - 6)</span>
+                                        </td>
+</tr>
+
+                                    
+                                    <tr class="text-center">
+                                        <td class="text-center sbold" colspan="2">
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblEnrollmentNo" title="" class="font-grey-gallery font-md bold" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="Enrollment No.">22C46096<br></span>
+                                            
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblABCID" class="font-blue-dark bold" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="" title=""></span>
+                                        </td>
+                                    </tr>
+                                    <tr id="ctl00_cphPageContent_ucStudentInfoCompact_trCurrentDivision" class="text-center">
+	<td class="text-center sbold" colspan="2">
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblCurrentDivision" title="" class="font-blue-dark" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="Current Division">BCA - 5 - A</span>
+                                            
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblCurrentLabBatchNo" title="" class="font-blue-dark" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="Current Batch"> <b>|</b> Batch - 1</span>
+                                            
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblCurrentRollNo" title="" class="font-blue-dark" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="Roll No."> <b>|</b> 90</span>
+                                        </td>
+</tr>
+
+                                    
+                                    <tr>
+                                        <th class="gn-view-label-header text-right text-nowrap">
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblPhoneStudent">Mobile :</span>
+                                        </th>
+                                        <td class="gn-view-label-value">
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblPhoneStudent1" title="" class="text-nowrap" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="<i class='fa fa-phone'></i> Student Mobile No.">8200021175</span>
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblPhoneStudent2" title="" class="text-nowrap" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="<i class='fa fa-phone'></i> Student Phone 2"></span>
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                        <th class="gn-view-label-header text-right text-nowrap">Email :</th>
+                                        <td class="gn-view-label-value">
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblEmail" title="" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="<i class='fa fa-envelope-o'></i> Student Email">kauckawala@gmail.com</span>
+                                            <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblEmailAlternate" title="" data-html="true" data-toggle="tooltip" data-placement="top" data-container="body" data-trigger="hover" data-original-title="<i class='fa fa-envelope-o'></i> Student Email Alternate"></span>
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                    
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hide">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 gn-view-label-header">
+                        <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblGender_XXXXX">Gender</span>
+                        <span class="gn-view-colon">:</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-8 col-lg-8 gn-view-label-value">
+                        <span id="ctl00_cphPageContent_ucStudentInfoCompact_lblGender">M</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+		</div>
+		<div id="ctl00_cphPageContent_divButtonListStudentAppRegistrationNoPrefix" class="col-md-3 col-sm-3">
+			
+			
+			<div id="ctl00_cphPageContent_divStudentAppRegistrationNoPrefix" class="row">
+				<div class="col-md-12">
+					<div class="portlet light">
+
+						
+						<div class="mt-widget-3" style="border: 0px !important">
+							<div class="mt-head bg-green" style="margin-bottom: 0px !important">
+								<h1>
+									<div class="mt-head-icon">
+										<i class="fa fa-mobile-phone"></i>
+									</div>
+								</h1>
+								<h3>
+									<div class="mt-head-desc bold" style="opacity: 1 !important">Activate Your Mobile Application</div>
+								</h3>
+
+								<div class="mt-head-button">
+									<a class="btn btn-circle btn-outline white btn-md" href="../MISDoc/MobileApp/ActivationOfMobileApplication.aspx">Activate</a>
+									
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="ctl00_cphPageContent_upList">
+	
+				<div id="ctl00_cphPageContent_divNotification" class="col-md-6 col-sm-6">
+
+					<div class="portlet light tasks-widget">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-bell-o"></i>
+								<span class="caption-subject font-blue-madison bold uppercase">Notification </span>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="nav nav-tabs">
+										<li class="active">
+											<a href="#tab_Notification" data-toggle="tab">Notification</a>
+										</li>
+										<li>
+											<a href="#tab_Circular" id="ctl00_cphPageContent_tabCircular" data-toggle="tab">Circular
+                                                 <span id="ctl00_cphPageContent_lblUnreadCircular" class=" badge badge-danger" style="position: absolute; margin-top: -15px;"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#tab_LMSNotification" id="ctl00_cphPageContent_tabLMSNotification" data-toggle="tab">LMS Notification
+                                                 <span id="ctl00_cphPageContent_lblLMSNotificationCount" class=" badge badge-danger" style="position: absolute; margin-top: -15px;"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#tab_StudentAnnouncement" id="ctl00_cphPageContent_tabStudentAnnouncement" data-toggle="tab">Student Announcement
+                                                 <span id="ctl00_cphPageContent_lblStudentAnnouncement" class=" badge badge-danger" style="position: absolute; margin-top: -15px;"></span>
+											</a>
+										</li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane fade active in" id="tab_Notification">
+											<div class="task-content">
+												<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+													<ul class="feeds">
+														
+																<li>
+																	<div class="col1">
+																		<div class="cont">
+																			<div class="cont-col1">
+																				<div class="label label-sm label-info">
+																					<i class="fa fa-bell-o"></i>
+																				</div>
+																			</div>
+																			<div class="cont-col2">
+																				<div class="desc">
+
+																					<a tabindex="-1" class="GNModalIFrame" data-target="#viewiFrameLG" data-toggle="modal" href="STU_Notification/STU_Notification_DashboardView.aspx?StuNotificationID=tN-EaaTWr-w=">Result Declared Of BCA Semester - 5 Regular Exam</a>
+																					
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col2">
+																		<div class="date">
+																			19-Dec
+																		</div>
+																	</div>
+																</li>
+															
+																<li>
+																	<div class="col1">
+																		<div class="cont">
+																			<div class="cont-col1">
+																				<div class="label label-sm label-info">
+																					<i class="fa fa-bell-o"></i>
+																				</div>
+																			</div>
+																			<div class="cont-col2">
+																				<div class="desc">
+
+																					<a tabindex="-1" class="GNModalIFrame" data-target="#viewiFrameLG" data-toggle="modal" href="STU_Notification/STU_Notification_DashboardView.aspx?StuNotificationID=TiMzbxwUVLA=">Monthly Fee Payment for ITM SLS Baroda University Parent</a>
+																					<a id="ctl00_cphPageContent_rpStudentNotification_ctl01_lbtnDocument" href="javascript:__doPostBack('ctl00$cphPageContent$rpStudentNotification$ctl01$lbtnDocument','')">
+                                                                                        <i class="fa fa-download"></i>
+																					</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col2">
+																		<div class="date">
+																			04-Dec
+																		</div>
+																	</div>
+																</li>
+															
+																<li>
+																	<div class="col1">
+																		<div class="cont">
+																			<div class="cont-col1">
+																				<div class="label label-sm label-info">
+																					<i class="fa fa-bell-o"></i>
+																				</div>
+																			</div>
+																			<div class="cont-col2">
+																				<div class="desc">
+
+																					<a tabindex="-1" class="GNModalIFrame" data-target="#viewiFrameLG" data-toggle="modal" href="STU_Notification/STU_Notification_DashboardView.aspx?StuNotificationID=qou75fRDhJk=">Monthly Fee Payment for ITM SLS Baroda University Parent</a>
+																					<a id="ctl00_cphPageContent_rpStudentNotification_ctl02_lbtnDocument" href="javascript:__doPostBack('ctl00$cphPageContent$rpStudentNotification$ctl02$lbtnDocument','')">
+                                                                                        <i class="fa fa-download"></i>
+																					</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col2">
+																		<div class="date">
+																			04-Dec
+																		</div>
+																	</div>
+																</li>
+															
+																<li>
+																	<div class="col1">
+																		<div class="cont">
+																			<div class="cont-col1">
+																				<div class="label label-sm label-info">
+																					<i class="fa fa-bell-o"></i>
+																				</div>
+																			</div>
+																			<div class="cont-col2">
+																				<div class="desc">
+
+																					<a tabindex="-1" class="GNModalIFrame" data-target="#viewiFrameLG" data-toggle="modal" href="STU_Notification/STU_Notification_DashboardView.aspx?StuNotificationID=TC85R6hWSqY=">Refund of Excess Fees</a>
+																					<a id="ctl00_cphPageContent_rpStudentNotification_ctl03_lbtnDocument" href="javascript:__doPostBack('ctl00$cphPageContent$rpStudentNotification$ctl03$lbtnDocument','')">
+                                                                                        <i class="fa fa-download"></i>
+																					</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col2">
+																		<div class="date">
+																			28-Nov
+																		</div>
+																	</div>
+																</li>
+															
+													</ul>
+													
+												</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 188.679px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+											</div>
+										</div>
+										<div class="tab-pane fade " id="tab_Circular">
+											<div class="task-content">
+												<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+													<table class="table table-advanced table-striped table-hover" id="sample_11">
+														
+													</table>
+													<div id="ctl00_cphPageContent_div_NoCircular" class="alert alert-info">
+														<i class="fa fa-info-circle"></i>&nbsp;No circular to display.
+													</div>
+												</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+											</div>
+										</div>
+										<div class="tab-pane fade " id="tab_LMSNotification">
+											<div class="task-content">
+												<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+													<ul class="feeds">
+														
+													</ul>
+													<div id="ctl00_cphPageContent_divLMSNotification" class="alert alert-info">
+														<i class="fa fa-info-circle"></i>&nbsp;No LMS notification to Display.
+													</div>
+												</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+											</div>
+										</div>
+										<div class="tab-pane fade " id="tab_StudentAnnouncement">
+											<div class="task-content">
+												<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 300px;"><div class="scroller" style="height: 300px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+													<ul class="feeds">
+														
+													</ul>
+													
+												</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			
+</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6 col-sm-6">
+			
+			<div id="ctl00_cphPageContent_divPlacement" class="portlet light tasks-widget">
+				<div class="portlet-title">
+					<div class="caption">
+						<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+						<span class="caption-subject font-blue-madison bold uppercase">Placement News</span>
+					</div>
+				</div>
+				<div class="portlet-body">
+					<div class="task-content">
+						<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 350px;"><div class="scroller" style="height: 350px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+							<ul class="feeds">
+								
+							</ul>
+							<div id="ctl00_cphPageContent_divNoPlacementNews" class="alert alert-info">
+								<i class="fa fa-info-circle"></i>&nbsp;No Placement News to Display.
+							</div>
+						</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 350px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ctl00_cphPageContent_divUsefulWebsite" class="col-md-6">
+			<div class="portlet light tasks-widget">
+				<div class="portlet-title">
+					<div class="caption">
+						<i class="fa fa-globe"></i>
+						<span class="caption-subject font-blue-madison bold uppercase">Useful Website</span>
+					</div>
+				</div>
+				<div class="portlet-body">
+					<div class="row">
+						<div class="col-md-12">
+							
+        <div class="alert alert-danger margin-top-10">
+            <i class="fa fa-times-circle"></i>
+            <span id="ctl00_cphPageContent_ucMessage_lblError">No Record Found</span>
+            <a id="ctl00_cphPageContent_ucMessage_hlError"></a>
+        </div>
+     
+						</div>
+					</div>
+					<div class="task-content">
+						<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 350px;"><div class="scroller" style="height: 350px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible="0" data-initialized="1">
+							<ul class="feeds">
+								
+							</ul>
+						</div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 350px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			
+		</div>
+	</div>
+	<div id="ctl00_cphPageContent_upTestList">
+	
+			
+			<div id="ModalInstruction" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+				<div class="modal-dialog">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">
+								<span id="ctl00_cphPageContent_lblTitle">-</span>
+							</h4>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="portlet-title">
+										<div class="caption font-green-sharp">
+											<i class="fa fa-book"></i>
+											<span class="caption-subject bold uppercase">Instruction</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<span id="ctl00_cphPageContent_lblInstruction"></span>
+						</div>
+						<div class="modal-footer">
+							<input type="submit" name="ctl00$cphPageContent$btnAgree" value="Agree" onclick="aspnetForm.target ='_blank'; ClosePopup();" id="ctl00_cphPageContent_btnAgree" class="btn blue">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">
+								Cancel</button>
+						</div>
+						<input type="hidden" name="ctl00$cphPageContent$hfTestID" id="ctl00_cphPageContent_hfTestID">
+						<input type="hidden" name="ctl00$cphPageContent$hfTestAttemptID" id="ctl00_cphPageContent_hfTestAttemptID">
+					</div>
+				</div>
+			</div>
+			</div>
+		
+</div>
+
+                    <!-- END PAGE CONTENT INNER -->
+                </div>
+            </div>
+            <!-- END PAGE CONTENT -->
+        
+        <!-- END PAGE CONTAINER -->
+        <!-- BEGIN PRE-FOOTER -->
+        <!-- END PRE-FOOTER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="container-fluid">
+                2024 © ITM(SLS) BARODA UNIVERSITY
+            </div>
+        </div>
+
+        <div class="modal fade" id="viewiFrameReg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-body">
+                    <iframe class="auto-height" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="" msallowfullscreen="true" style="border: 0px; width: 100%;" onload="this.height=this.contentWindow.document.body.scrollHeight;" height="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="viewiFrameLG" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-body">
+                    <iframe class="auto-height" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="" msallowfullscreen="true" style="border: 0px; width: 100%;" onload="this.height=this.contentWindow.document.body.scrollHeight;" height="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="viewiFrameFull" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-full">
+                <div class="modal-body">
+                    <iframe class="auto-height" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="" msallowfullscreen="true" style="border: 0px; width: 100%;" onload="this.height=this.contentWindow.document.body.scrollHeight;" height="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-to-top" style="display: block;">
+            <i class="icon-arrow-up"></i>
+        </div>
+
+        <!-- END FOOTER -->
+        <!-- BEGIN JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+<script src="../Default/assets/global/plugins/respond.min.js?V=2022.12.05.12.05"></script>
+<script src="../Default/assets/global/plugins/excanvas.min.js?V=2022.12.05.12.05"></script> 
+<script src="../Default/assets/global/plugins/ie8.fix.min.js?V=2022.12.05.12.05"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+
+        <script src="../Default/assets/global/plugins/jquery.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/bootstrap/js/bootstrap.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/js.cookie.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/jquery.blockui.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+
+        <!-- END CORE PLUGINS -->
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="../Default/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+
+        <script src="../Default/assets/global/plugins/jquery-ui/jquery-ui.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="../Default/assets/global/plugins/select2/js/select2.full.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+
+        <script src="../Default/assets/global/scripts/datatable.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/datatables/datatables.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/global/plugins/bootbox/bootbox.min.js?V=202103180702"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="../Default/assets/global/scripts/app.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/pages/scripts/components-date-time-pickers.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+         <script src="../Default/assets/global/plugins/bootstrap-multiselect/js/bootstrap-multiselect.js?V=2022.12.05.12.05" type="text/javascript"></script>
+
+       
+
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="../Default/assets/layouts/layout3/scripts/layout.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/layouts/layout3/scripts/demo.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/layouts/global/scripts/quick-sidebar.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/assets/layouts/global/scripts/quick-nav.min.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+
+        <script src="../Default/global/plugins/tinymce/tinymce.bundle.js?V=2022.12.05.12.05"></script>
+        <script src="../Default/global/plugins/tinymce/UI_TinyMCE.js?V=2022.12.05.12.05"></script>
+
+        <!-- BEGIN CUSTOM SCRIPTS -->
+
+
+        <script src="../Default/JS/UI_Select2.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/JS/GN_UI.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/JS/CommonValidation.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/JS/CommonJSFunctions.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/JS/UI_ModalEvents.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/JS/UI_BlockUI.js?V=2022.12.05.12.05" type="text/javascript"></script>
+        <script src="../Default/JS/GN_InitMain.js?V=2022.12.05.12.05" type="text/javascript"></script>
+
+        <!-- END CUSTOM SCRIPTS -->
+
+
+        <script>
+
+            $(document).ready(function () {
+                InitMain.init();
+            });
+
+
+            $(document).ajaxStart(function () {
+
+                funBlockUI();
+
+            }).ajaxStop(function () {
+
+                funUnblockUI();
+
+                InitMain.init();
+
+            });
+
+            function CheckMenu() {
+                var MenuData = localStorage.getItem('StudentMenu');
+                if (MenuData != null)
+                    document.getElementById("ctl00_MenuUL").innerHTML = MenuData;
+
+        }
+        jQuery(document).ready(function () {
+
+            if ('1' != null && '1' != "1")
+                return;
+
+            console
+            //CHeck Menu in Browser Session 
+            var MenuData = localStorage.getItem('StudentMenu');
+            if (MenuData != null) {
+                document.getElementById("ctl00_MenuUL").innerHTML = MenuData;
+            }
+            else {
+                $.ajax({
+                    type: "post",
+                    url: "https://itmbu.gnums.co.in/WS/FillMenu_Student.asmx/FillStudentMenuByUserID",
+                    data: "{ UserID: '" + 'CzOX3Ldodeg=' + "',StudentID: '" + 'j2XuyB8WMLc=' + "'}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+
+                    success: function (r) {
+                        if (r.d != undefined) {
+                            localStorage.setItem('StudentMenu', r.d);
+                            CheckMenu();
+                        }
+                        else {
+                            alert("Try after sometime");
+                        }
+                    },
+                    error: function (r) {
+                        //alert("error");
+                        //alert(r.responseText);
+                    }
+                });
+            }
+
+            var pathname = window.location.pathname; // Returns path only
+            var url = window.location.href
+
+            $("#ctl00_MenuUL li >ul > li > a").each(function () {
+                var h = $(this).attr("href");
+                if (h == url) {
+                    $(this).closest('li').addClass("active");
+
+                    $(this).parent().parent().parent().addClass("active");
+
+                    if ($(this).parent().parent().parent().parent().parent() != undefined)
+                        $(this).parent().parent().parent().parent().parent().addClass("active");
+                }
+
+            });
+
+            $("#ctl00_MenuUL li > a").each(function () {
+                var h = $(this).attr("href");
+                if (h == url) {
+                    $(this).parent().addClass("active");
+                }
+            });
+
+
+
+        });
+
+        if (typeof Sys !== 'undefined') {
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_beginRequest(function () {
+
+                funBlockUI();
+
+            });
+            prm.add_endRequest(function () {
+
+                funUnblockUI();
+                InitMain.init();
+                $(".page-header .page-header-menu .hor-menu .navbar-nav>li>a").on("click", function () {
+                    if ($(this).parent().hasClass("classic-menu-dropdown")) {
+                        if ($(this).parent().hasClass("open opened")) {
+                            $(".classic-menu-dropdown").removeClass("open opened");
+                            $(".dropdown-submenu").removeClass("open opened");
+                            $(this).parent().removeClass("open opened");
+                        }
+                        else {
+                            $(".classic-menu-dropdown").removeClass("open opened");
+                            $(".dropdown-submenu").removeClass("open opened");
+                            $(this).parent().addClass("open opened");
+                        }
+                    }
+                });
+
+                $(".page-header .page-header-menu .hor-menu .navbar-nav>li>ul>li>a").on("click", function () {
+                    if ($(this).parent().hasClass("open opened")) {
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().removeClass("open opened");
+                    }
+                    else {
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().addClass("open opened");
+                    }
+                });
+            });
+        }
+
+        $(document).ready(function () {
+            $(".page-header .page-header-menu .hor-menu .navbar-nav>li>a").on("click", function () {
+                if ($(this).parent().hasClass("classic-menu-dropdown")) {
+                    if ($(this).parent().hasClass("open opened")) {
+                        $(".classic-menu-dropdown").removeClass("open opened");
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().removeClass("open opened");
+                    }
+                    else {
+                        $(".classic-menu-dropdown").removeClass("open opened");
+                        $(".dropdown-submenu").removeClass("open opened");
+                        $(this).parent().addClass("open opened");
+                    }
+                }
+            });
+
+            $(".page-header .page-header-menu .hor-menu .navbar-nav>li>ul>li>a").on("click", function () {
+                if ($(this).parent().hasClass("open opened")) {
+                    $(".dropdown-submenu").removeClass("open opened");
+                    $(this).parent().removeClass("open opened");
+                }
+                else {
+                    $(".dropdown-submenu").removeClass("open opened");
+                    $(this).parent().addClass("open opened");
+                }
+            });
+        });
+
+        if (typeof Sys !== 'undefined') {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_beginRequest(function () {
+
+                funBlockUI();
+                InitMain.init();
+
+            });
+            prm.add_endRequest(function () {
+
+                funUnblockUI();
+                InitMain.init();
+
+
+                /*Old IFrame Modal BEGIN*/
+                $('a.GNModalIFrame').on('click', function (e) {
+                    var src = $(this).attr('href');
+                    var target = $(this).attr('data-target');
+
+                    $(target + " iframe").attr({
+                        'src': src
+                    });
+                    e.preventDefault();
+                });
+
+                $('.modal .fade').on('hidden.bs.modal', function () {
+                    $(".modal .fade iframe").attr({
+                        'src': 'about:blank'
+                    });
+                });
+
+                function closemyModal() {
+                    $('.modal').modal('hide');
+                }
+
+                function closeModalAndRefreshPage() {
+                    $('.modal').modal('hide');
+                    location.reload();
+                }
+
+
+                /*Old IFrame Modal END*/
+
+            });
+
+        }
+
+
+
+
+
+        /*Old IFrame Modal BEGIN*/
+        $('a.GNModalIFrame').on('click', function (e) {
+            var src = $(this).attr('href');
+            var target = $(this).attr('data-target');
+
+            $(target + " iframe").attr({
+                'src': src
+            });
+            e.preventDefault();
+        });
+
+        $('.modal .fade').on('hidden.bs.modal', function () {
+            $(".modal .fade iframe").attr({
+                'src': 'about:blank'
+            });
+        });
+
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                return false;  //Prevent from ctrl+shift+i
+            }
+        });
+        /*Old IFrame Modal END*/
+        </script>
+
+        <!-- END JAVASCRIPTS -->
+        
+	
+
+	<script>
+        //jQuery(document).ready(function () {
+        //    Profile.init(); // init page demo
+        //});
+        function ViewModal() {
+            $('#ModalInstruction').modal('show');
+        }
+        $('#li_student_Dashboard').addClass('active');
+        function ClosePopup() {
+            $('#ModalInstruction').modal('hide');
+        }
+	</script>
+
+	<script>
+	function ShowCircularList() {
+		document.getElementById("hlShowCircularList").click();
+	}
+
+	document.addEventListener("DOMContentLoaded", function () {
+		let circularList_continueButton = document.getElementById("continueButton");
+
+		if ($("#divShowCircularList").length && circularList_continueButton) {
+			circularList.addEventListener("click", function () {
+				$("#divShowCircularList").modal('hide');
+			});
+		}
+	});
+
+	function hideButtonForDuration(durationInSeconds) {
+		let continueButton = document.getElementById('ctl00_cphPageContent_continueButton');
+		let countdownLabel = document.getElementById("time");
+
+		countdownLabel.innerHTML = "You can continue after " + durationInSeconds + " seconds";
+
+		let countdownInterval = setInterval(function () {
+			durationInSeconds--;
+
+			countdownLabel.innerHTML = "You can continue after " + durationInSeconds + " seconds";
+
+			if (durationInSeconds <= 0) {
+				clearInterval(countdownInterval);
+				countdownLabel.innerHTML = "0";
+				continueButton.style.display = "block";
+				time.style.display = "none";
+			}
+		}, 1000);
+	}
+	</script>
+
+    </form>
+
+
+</body></html>
